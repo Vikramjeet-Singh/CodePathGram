@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ivCommentorPhoto"
+        android:minHeight="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/tvCommentorName"
+        android:layout_toEndOf="@+id/ivCommentorPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivCommentorPhoto"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/ivCommentorPhoto"
+        android:gravity="center_vertical"
+        android:textColor="#ff181f8a"
+        android:textSize="12dp"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCommentTimeStamp"
+        android:src="@drawable/timestamp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/tvCommentTimestamp"
+        android:layout_toLeftOf="@+id/tvCommentTimestamp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvCommentTimestamp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/ivCommentorPhoto"
+        android:gravity="center_vertical"
+        android:paddingRight="5dp"
+        android:textSize="10dp"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvCommentTxt"
+        android:layout_below="@+id/tvCommentorName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp"
+        android:textIsSelectable="false"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="#9b000000"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+</RelativeLayout>

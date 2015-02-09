@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ivUserPhoto"
+        android:minHeight="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/tvUsername"
+        android:layout_toEndOf="@+id/ivUserPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivUserPhoto"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/ivUserPhoto"
+        android:gravity="center_vertical"
+        android:textColor="#ff181f8a"
+        android:focusable="false"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/timestamp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/tvTimestamp"
+        android:layout_toLeftOf="@+id/tvTimestamp"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvTimestamp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/ivUserPhoto"
+        android:gravity="center_vertical"
+        android:focusable="false"
+        android:paddingRight="5dp"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPhoto"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:minHeight="50dp"
+        android:layout_below="@+id/ivUserPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvCaption"
+        android:layout_below="@+id/ivLikes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="#9b000000"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLikes"
+        android:src="@drawable/likes"
+        android:layout_below="@+id/ivPhoto"
+        android:focusable="false"
+        android:layout_alignLeft="@+id/ivUserPhoto" />
+
+    <TextView
+        android:id="@+id/tvLikesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivLikes"
+        android:layout_below="@+id/ivPhoto"
+        android:textSize="10dp"
+        android:textColor="#ff181f8a"
+        android:focusable="false"
+        android:layout_alignBottom="@+id/ivLikes"
+        android:layout_alignTop="@+id/ivLikes"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCaption"
+        android:focusable="false"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Comment 1"
+            android:id="@+id/tvFirstComment"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#9b000000"
+            android:focusable="false"
+            android:textSize="10dp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Comment 2"
+            android:id="@+id/tvSecondComment"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="10dp"
+            android:focusable="false"
+            android:textColor="#9b000000"
+            android:textIsSelectable="false" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
