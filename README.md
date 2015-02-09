@@ -7,12 +7,10 @@ This is an app built as a First week project for CodePath’s Android class.
 
 Time spent: 12-14 hours spent in total
 Completed user stories:
-	•	
-Required: User can scroll through current popular photos from Instagram
-	•	
-Required: For each photo displayed, user can see the following details : Photo, Username and Caption
-	•	
-Optional: Relative timestamp, like count, user profile image using ‘RoundedImageView’ is displayed for all the photos
+
+	•	Required: User can scroll through current popular photos from Instagram
+	•	Required: For each photo displayed, user can see the following details : Photo, Username and Caption
+	•	Optional: Relative timestamp, like count, user profile image using ‘RoundedImageView’ is displayed for all the photos
 	•	Advanced: Latest 2 comments are shown for every photo under the caption
 	•	Advanced: Pull-to-refresh is implemented for popular photos screen
 	•	Advanced: A placeholder image is deployed while the photos are downloading
@@ -23,4 +21,4 @@ Optional: Relative timestamp, like count, user profile image using ‘RoundedIma
 
 Walkthrough of all user stories:
 
-![](https://github.com/Vikramjeet-Singh/Android-Practice/blob/master/InstagramPhoto_Walkthrough.gif)
+![](https://github.com/Vikramjeet-Singh/CodePathGram/blob/master/InstagramPhoto_Walkthrough.gif)
